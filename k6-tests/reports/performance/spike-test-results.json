@@ -1,0 +1,310 @@
+{
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 20373.182124
+  },
+  "metrics": {
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 0.018975,
+        "avg": 0.012045445205479451,
+        "min": 0.00319,
+        "med": 0.01129,
+        "max": 0.130161,
+        "p(90)": 0.015870500000000003
+      }
+    },
+    "spike_error_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.4444444444444444,
+        "passes": 8,
+        "fails": 10
+      },
+      "thresholds": {
+        "rate<0.6": {
+          "ok": true
+        }
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 146,
+        "rate": 7.166283554104648
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 1630.998085,
+        "max": 1966.860589,
+        "p(90)": 1896.1241127,
+        "p(95)": 1920.5211679,
+        "avg": 1697.2070915555557,
+        "min": 1385.861558
+      }
+    },
+    "http_req_failed": {
+      "thresholds": {
+        "rate<0.4": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.1780821917808219,
+        "passes": 26,
+        "fails": 120
+      }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.6535221027397262,
+        "min": 0.257802,
+        "med": 0.636446,
+        "max": 1.203882,
+        "p(90)": 0.890869,
+        "p(95)": 0.936179
+      },
+      "thresholds": {
+        "p(95)<10000": {
+          "ok": true
+        }
+      }
+    },
+    "rate_limit_hit_rate": {
+      "contains": "default",
+      "values": {
+        "passes": 18,
+        "fails": 18,
+        "rate": 0.5
+      },
+      "thresholds": {
+        "rate<0.8": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "system_overload_indicator": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0,
+        "passes": 0,
+        "fails": 18
+      }
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.027315301369863005,
+        "min": 0.01093,
+        "med": 0.027285,
+        "max": 0.073091,
+        "p(90)": 0.03755,
+        "p(95)": 0.0398835
+      }
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0.0018919452054794522,
+        "min": 0,
+        "med": 0,
+        "max": 0.090701
+      }
+    },
+    "data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 164857,
+        "rate": 8091.863067664589
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 22126,
+        "rate": 1086.0355473843797
+      }
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.6141613561643836,
+        "min": 0.230862,
+        "med": 0.5980855,
+        "max": 1.178602,
+        "p(90)": 0.845078,
+        "p(95)": 0.87533825
+      }
+    },
+    "checks": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 108,
+        "fails": 0
+      }
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 18,
+        "rate": 0.8835144107800251
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.6978444583333338,
+        "min": 0.257802,
+        "med": 0.7409275,
+        "max": 1.203882,
+        "p(90)": 0.903748,
+        "p(95)": 0.9377345
+      }
+    },
+    "http_req_blocked": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.006054917808219181,
+        "min": 0.00108,
+        "med": 0.0035050000000000003,
+        "max": 0.145521,
+        "p(90)": 0.004529999999999999,
+        "p(95)": 0.00654
+      }
+    },
+    "vus_max": {
+      "values": {
+        "value": 2,
+        "min": 2,
+        "max": 2
+      },
+      "type": "gauge",
+      "contains": "default"
+    },
+    "spike_response_time": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "min": 0.257802,
+        "med": 0.750842,
+        "max": 1.203882,
+        "p(90)": 0.911149,
+        "p(95)": 0.9415205,
+        "avg": 0.7129078518518521
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 0,
+        "min": 0,
+        "max": 2
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0
+      }
+    }
+  },
+  "setup_data": {
+    "spikeEvents": [],
+    "startTime": 1754593995203
+  },
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [],
+    "checks": [
+        {
+          "name": "health endpoint responds",
+          "path": "::health endpoint responds",
+          "id": "a91384b9ffb009b6d4d6f8dae686981c",
+          "passes": 18,
+          "fails": 0
+        },
+        {
+          "name": "health not completely down",
+          "path": "::health not completely down",
+          "id": "cb66341450f7b677f20fe2e6d071265b",
+          "passes": 18,
+          "fails": 0
+        },
+        {
+          "name": "auth endpoint responds",
+          "path": "::auth endpoint responds",
+          "id": "1314e8ee7870ee871177a37b85598edc",
+          "passes": 18,
+          "fails": 0
+        },
+        {
+          "path": "::auth handles spike load",
+          "id": "eb58f612f207a2e926d7c06e812c97c7",
+          "passes": 18,
+          "fails": 0,
+          "name": "auth handles spike load"
+        },
+        {
+          "name": "error endpoint responds during spike",
+          "path": "::error endpoint responds during spike",
+          "id": "0fe6c6a826ab195ed59b218b83869165",
+          "passes": 18,
+          "fails": 0
+        },
+        {
+          "path": "::error handling works during spike",
+          "id": "ec13806b204a94a954c93ef85168319a",
+          "passes": 18,
+          "fails": 0,
+          "name": "error handling works during spike"
+        }
+      ]
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  }
+}

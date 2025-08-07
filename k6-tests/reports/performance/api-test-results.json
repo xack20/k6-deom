@@ -1,0 +1,716 @@
+{
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [
+      {
+        "checks": [
+          {
+            "id": "d3b48fea5f159ec20f713252717ae665",
+            "passes": 90,
+            "fails": 498,
+            "name": "register status is 201",
+            "path": "::Authentication API::register status is 201"
+          },
+          {
+            "path": "::Authentication API::register response time < 1000ms",
+            "id": "445d44ae90654ff69dfa9656a03ae3b6",
+            "passes": 588,
+            "fails": 0,
+            "name": "register response time < 1000ms"
+          },
+          {
+            "passes": 90,
+            "fails": 498,
+            "name": "register returns access token",
+            "path": "::Authentication API::register returns access token",
+            "id": "b32ab382acc0a3ed57d5800873d89909"
+          },
+          {
+            "name": "register returns user info",
+            "path": "::Authentication API::register returns user info",
+            "id": "54bd8bac8203e312ecc1286724c66176",
+            "passes": 90,
+            "fails": 498
+          },
+          {
+            "name": "status is correct",
+            "path": "::Authentication API::status is correct",
+            "id": "a653516b1d5ab32145394d859161f78b",
+            "passes": 0,
+            "fails": 90
+          },
+          {
+            "name": "response time is acceptable",
+            "path": "::Authentication API::response time is acceptable",
+            "id": "a92797af154672a4b9316d85ecfaaa2f",
+            "passes": 90,
+            "fails": 0
+          },
+          {
+            "passes": 90,
+            "fails": 0,
+            "name": "response has body",
+            "path": "::Authentication API::response has body",
+            "id": "cd000aa98c0df32c59d2ca63e868fb12"
+          },
+          {
+            "fails": 0,
+            "name": "has access token",
+            "path": "::Authentication API::has access token",
+            "id": "85ed5042118dbcd7b59284f7a53c101a",
+            "passes": 90
+          },
+          {
+            "path": "::Authentication API::has user info",
+            "id": "d6a039964a532b18564fad9e2ac4481c",
+            "passes": 90,
+            "fails": 0,
+            "name": "has user info"
+          },
+          {
+            "fails": 0,
+            "name": "profile status is 200",
+            "path": "::Authentication API::profile status is 200",
+            "id": "a13356d25b9f26b33406424db1e67695",
+            "passes": 90
+          },
+          {
+            "passes": 90,
+            "fails": 0,
+            "name": "profile returns user data",
+            "path": "::Authentication API::profile returns user data",
+            "id": "a5eb536064f3e8cc29e31005a92ea34b"
+          },
+          {
+            "name": "refresh status is 200",
+            "path": "::Authentication API::refresh status is 200",
+            "id": "1db159ee4f22206a50a379000435607d",
+            "passes": 0,
+            "fails": 90
+          },
+          {
+            "passes": 90,
+            "fails": 0,
+            "name": "refresh returns new token",
+            "path": "::Authentication API::refresh returns new token",
+            "id": "8d8963a285ebebc25048ed6103d97daf"
+          }
+        ],
+        "name": "Authentication API",
+        "path": "::Authentication API",
+        "id": "c2a192c7698756320eefb3baf1b67bfb",
+        "groups": []
+      },
+      {
+        "name": "Users API",
+        "path": "::Users API",
+        "id": "7784f4b97937e2adf498b278522d6ab1",
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is correct",
+              "path": "::Users API::status is correct",
+              "id": "5375a88927ab822d47da282e2e8cc64b",
+              "passes": 269,
+              "fails": 1451
+            },
+            {
+              "name": "response time is acceptable",
+              "path": "::Users API::response time is acceptable",
+              "id": "0c665e72de72f671908de3dbac4153e6",
+              "passes": 1720,
+              "fails": 0
+            },
+            {
+              "name": "response has body",
+              "path": "::Users API::response has body",
+              "id": "932c17481ae072348b410b3227a70f72",
+              "passes": 1720,
+              "fails": 0
+            },
+            {
+              "name": "has data array",
+              "path": "::Users API::has data array",
+              "id": "c383280a6bcf713a72afb4c15592925c",
+              "passes": 35,
+              "fails": 395
+            },
+            {
+              "passes": 35,
+              "fails": 395,
+              "name": "has pagination info",
+              "path": "::Users API::has pagination info",
+              "id": "1ff27fbf29bae9078625c8e7bafa3e92"
+            },
+            {
+              "name": "users list has pagination",
+              "path": "::Users API::users list has pagination",
+              "id": "912cda88935c84547e14d16c9c0aaed3",
+              "passes": 35,
+              "fails": 395
+            },
+            {
+              "fails": 330,
+              "name": "user detail returns correct user",
+              "path": "::Users API::user detail returns correct user",
+              "id": "3f4dfdaf950919d1f0b4d65236471047",
+              "passes": 100
+            },
+            {
+              "name": "user update modifies data",
+              "path": "::Users API::user update modifies data",
+              "id": "922c0403feb3e1113396dcfd2105513b",
+              "passes": 100,
+              "fails": 330
+            }
+          ]
+      },
+      {
+        "id": "58622bad63f6b68c8a9cca9415fdfe63",
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is correct",
+              "path": "::Products API::status is correct",
+              "id": "c7b76ae46b7ff842618c18ca7e3cb147",
+              "passes": 2940,
+              "fails": 0
+            },
+            {
+              "id": "83d66aab894ccb2b1656a0e6bbb0813e",
+              "passes": 2940,
+              "fails": 0,
+              "name": "response time is acceptable",
+              "path": "::Products API::response time is acceptable"
+            },
+            {
+              "id": "5abd5911b1dfac8fb4afadbf96feba30",
+              "passes": 2940,
+              "fails": 0,
+              "name": "response has body",
+              "path": "::Products API::response has body"
+            },
+            {
+              "fails": 0,
+              "name": "has data array",
+              "path": "::Products API::has data array",
+              "id": "151146b0e8ac45e952e7b603f0f242a3",
+              "passes": 588
+            },
+            {
+              "id": "b1ca043a3b83598029b6f6d7783d2fc0",
+              "passes": 588,
+              "fails": 0,
+              "name": "has pagination info",
+              "path": "::Products API::has pagination info"
+            },
+            {
+              "name": "products list contains products",
+              "path": "::Products API::products list contains products",
+              "id": "4a5f94513238354bd37b89e2ec6b8c72",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "passes": 588,
+              "fails": 0,
+              "name": "product detail has required fields",
+              "path": "::Products API::product detail has required fields",
+              "id": "a07e90d7feff6beb63a479d38fda53ce"
+            },
+            {
+              "name": "categories returns array",
+              "path": "::Products API::categories returns array",
+              "id": "06e835f741acf4435cb0caba2076b514",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "path": "::Products API::filtered products match criteria",
+              "id": "ff18f07c7ec65195a454615e11056054",
+              "passes": 588,
+              "fails": 0,
+              "name": "filtered products match criteria"
+            }
+          ],
+        "name": "Products API",
+        "path": "::Products API"
+      },
+      {
+        "name": "Health & Monitoring API",
+        "path": "::Health & Monitoring API",
+        "id": "6e1fefae4fe7d349cf689ee9b75684ed",
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is correct",
+              "path": "::Health & Monitoring API::status is correct",
+              "id": "1d1a0bfea7923691c3f83d110fbd9d83",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "name": "response time is acceptable",
+              "path": "::Health & Monitoring API::response time is acceptable",
+              "id": "14f8f4d489276dc8c2c31c8137217ffe",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "path": "::Health & Monitoring API::response has body",
+              "id": "778f91be64f9fac2a37fab50020d8303",
+              "passes": 588,
+              "fails": 0,
+              "name": "response has body"
+            },
+            {
+              "fails": 0,
+              "name": "health check returns status ok",
+              "path": "::Health & Monitoring API::health check returns status ok",
+              "id": "323fd6a26449401e9e71f93732c819a1",
+              "passes": 588
+            },
+            {
+              "name": "health check includes uptime",
+              "path": "::Health & Monitoring API::health check includes uptime",
+              "id": "ae933ee7666cfefa048f824c86c95042",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "id": "1b6a30be444f539fec3fa41eda9003b2",
+              "passes": 588,
+              "fails": 0,
+              "name": "slow endpoint responds",
+              "path": "::Health & Monitoring API::slow endpoint responds"
+            },
+            {
+              "name": "slow endpoint takes time",
+              "path": "::Health & Monitoring API::slow endpoint takes time",
+              "id": "31d385098674ae40123523b4e5923e8f",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "fails": 0,
+              "name": "slow endpoint includes delay info",
+              "path": "::Health & Monitoring API::slow endpoint includes delay info",
+              "id": "7d58fc0bba2cf5d32486976f7cda66e0",
+              "passes": 588
+            },
+            {
+              "name": "error endpoint responds",
+              "path": "::Health & Monitoring API::error endpoint responds",
+              "id": "687c367cf1c7b74fd1f877c152fdeda7",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "id": "bb393fbff520014577351d4bd6c4d73b",
+              "passes": 588,
+              "fails": 0,
+              "name": "error endpoint handles errors gracefully",
+              "path": "::Health & Monitoring API::error endpoint handles errors gracefully"
+            }
+          ]
+      },
+      {
+        "checks": [
+          {
+            "id": "c07b2a3839cbb29173776bf7f4edc9ed",
+            "passes": 588,
+            "fails": 0,
+            "name": "upload status is 200 or 201",
+            "path": "::Upload API::upload status is 200 or 201"
+          },
+          {
+            "id": "12d7f62dd3dbc15da767764544fc3f28",
+            "passes": 588,
+            "fails": 0,
+            "name": "upload response includes filename",
+            "path": "::Upload API::upload response includes filename"
+          }
+        ],
+        "name": "Upload API",
+        "path": "::Upload API",
+        "id": "bb7a3d9b615fab5e1fc8786ed124eca5",
+        "groups": []
+      },
+      {
+        "path": "::Simulation API",
+        "id": "0cbd232faad4a1f0821393a00d73f3fd",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::Simulation API::status is correct",
+              "id": "e0da4db063977133f12baf83de64ae13",
+              "passes": 1176,
+              "fails": 588,
+              "name": "status is correct"
+            },
+            {
+              "name": "response time is acceptable",
+              "path": "::Simulation API::response time is acceptable",
+              "id": "ceb5579e4cd1e86442a55ed57f3cdab3",
+              "passes": 1764,
+              "fails": 0
+            },
+            {
+              "name": "response has body",
+              "path": "::Simulation API::response has body",
+              "id": "64e04c0d10af42c019981d3da9957e2a",
+              "passes": 1764,
+              "fails": 0
+            },
+            {
+              "name": "cpu intensive includes result",
+              "path": "::Simulation API::cpu intensive includes result",
+              "id": "4df793a5b6e7a3253ba238e5e04104c4",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "name": "network simulation respects delay",
+              "path": "::Simulation API::network simulation respects delay",
+              "id": "6cdc8e43ee8e4e6accb5b00b8885f4ed",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "name": "random response has expected size",
+              "path": "::Simulation API::random response has expected size",
+              "id": "4ae290e4621251ed8d672a98dbae7a7a",
+              "passes": 588,
+              "fails": 0
+            }
+          ],
+        "name": "Simulation API"
+      },
+      {
+        "name": "Error Handling",
+        "path": "::Error Handling",
+        "id": "91c3e675db995fab563ccbe1aad92f9b",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::Error Handling::404 returns correct status",
+              "id": "8ab19b9262839b0abcfb181fc815fa37",
+              "passes": 588,
+              "fails": 0,
+              "name": "404 returns correct status"
+            },
+            {
+              "name": "404 response is not empty",
+              "path": "::Error Handling::404 response is not empty",
+              "id": "10be888c8b6b9c8ae8998f32aa5c5b76",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "name": "invalid product ID handled",
+              "path": "::Error Handling::invalid product ID handled",
+              "id": "a477dd28004ec44edc514716c3ce19f5",
+              "passes": 588,
+              "fails": 0
+            },
+            {
+              "name": "unauthorized returns 401",
+              "path": "::Error Handling::unauthorized returns 401",
+              "id": "780c3a2b69ac4aa129f2fd02b7c29ebc",
+              "passes": 31,
+              "fails": 557
+            },
+            {
+              "name": "invalid JSON handled",
+              "path": "::Error Handling::invalid JSON handled",
+              "id": "e8a519b04ca27251af1b0229874ac4cf",
+              "passes": 588,
+              "fails": 0
+            }
+          ]
+      }
+    ],
+    "checks": []
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 423117.073541
+  },
+  "metrics": {
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 273.1577765857117,
+        "min": 0.15102,
+        "med": 0.44879,
+        "max": 4993.582242,
+        "p(90)": 500.988067,
+        "p(95)": 2371.1627025
+      }
+    },
+    "iteration_duration": {
+      "values": {
+        "max": 6626.899927,
+        "p(90)": 6062.9632592,
+        "p(95)": 6291.092231,
+        "avg": 4438.887791452385,
+        "min": 2510.847556,
+        "med": 4437.652518
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "vus_max": {
+      "values": {
+        "value": 10,
+        "min": 10,
+        "max": 10
+      },
+      "type": "gauge",
+      "contains": "default"
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 168.56943967856807,
+        "min": 0.15102,
+        "med": 0.34065,
+        "max": 4993.582242,
+        "p(90)": 55.10645119999998,
+        "p(95)": 501.56147459999994
+      },
+      "thresholds": {
+        "p(95)<2000": {
+          "ok": true
+        }
+      }
+    },
+    "checks": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.8466342295345104,
+        "passes": 33757,
+        "fails": 6115
+      }
+    },
+    "data_consistency_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.7945205479452054,
+        "passes": 1276,
+        "fails": 330
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": false
+        }
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 4596,
+        "fails": 7391,
+        "rate": 0.38341536664720116
+      },
+      "thresholds": {
+        "rate<0.05": {
+          "ok": false
+        }
+      }
+    },
+    "group_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 491.18002417589895,
+        "min": 0.00139,
+        "med": 1.469402,
+        "max": 4994.276782,
+        "p(90)": 2068.7924055,
+        "p(95)": 3450.2622865
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "rate": 28.330220521905883,
+        "count": 11987
+      }
+    },
+    "vus": {
+      "contains": "default",
+      "values": {
+        "value": 1,
+        "min": 1,
+        "max": 10
+      },
+      "type": "gauge"
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.019636103278551732,
+        "min": 0.00632,
+        "med": 0.0163,
+        "max": 0.17506,
+        "p(90)": 0.03726839999999999,
+        "p(95)": 0.045920699999999995
+      }
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 588,
+        "rate": 1.389686299064041
+      }
+    },
+    "http_req_waiting": {
+      "values": {
+        "avg": 168.54386486468647,
+        "min": 0.13879,
+        "med": 0.315601,
+        "max": 4993.533332,
+        "p(90)": 55.067119999999974,
+        "p(95)": 501.51230289999995
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "http_req_connecting": {
+      "contains": "time",
+      "values": {
+        "p(95)": 0,
+        "avg": 0.00009196471177108532,
+        "min": 0,
+        "med": 0,
+        "max": 0.13914,
+        "p(90)": 0
+      },
+      "type": "trend"
+    },
+    "api_endpoint_success": {
+      "contains": "default",
+      "values": {
+        "rate": 0.6993464052287581,
+        "passes": 6848,
+        "fails": 2944
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": false
+        }
+      },
+      "type": "rate"
+    },
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 0.00451,
+        "max": 0.16828,
+        "p(90)": 0.01041,
+        "p(95)": 0.01424,
+        "avg": 0.005938710603153436,
+        "min": 0.00197
+      }
+    },
+    "endpoint_response_time": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "med": 0.662161,
+        "max": 162.208724,
+        "p(90)": 54.168247699999995,
+        "p(95)": 54.5304865,
+        "avg": 15.300770637168139,
+        "min": 0.23419
+      }
+    },
+    "data_received": {
+      "values": {
+        "count": 9789106,
+        "rate": 23135.69130660816
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "http_req_blocked": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.0017873460415450072,
+        "min": 0.00069,
+        "med": 0.00134,
+        "max": 0.2021,
+        "p(90)": 0.002593999999999996,
+        "p(95)": 0.00326
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 0,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 2514300,
+        "rate": 5942.326975742718
+      }
+    },
+    "crud_operation_success": {
+      "values": {
+        "rate": 0.23255813953488372,
+        "passes": 100,
+        "fails": 330
+      },
+      "thresholds": {
+        "rate>0.90": {
+          "ok": false
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    }
+  },
+  "setup_data": {
+    "testData": {
+      "products": [],
+      "tokens": {},
+      "users": []
+    },
+    "startTime": 1754593470341
+  }
+}

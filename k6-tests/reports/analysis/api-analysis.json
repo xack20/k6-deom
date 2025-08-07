@@ -1,0 +1,36 @@
+{
+  "endpointSuccessRate": 0.6993464052287581,
+  "crudOperationSuccessRate": 0.23255813953488372,
+  "dataConsistencyRate": 0.7945205479452054,
+  "averageResponseTime": 15.300770637168139,
+  "testedEndpoints": [
+    "auth/register",
+    "auth/login",
+    "auth/profile",
+    "auth/refresh",
+    "users",
+    "users/{id}",
+    "users (search)",
+    "products",
+    "products/{id}",
+    "products/categories",
+    "products (search)",
+    "products (filter)",
+    "health",
+    "health/slow",
+    "health/error",
+    "health/memory-intensive",
+    "upload/file",
+    "simulation/cpu-intensive",
+    "simulation/network-simulation",
+    "simulation/random-response"
+  ],
+  "apiQualityScore": 82,
+  "recommendations": [
+    "Improve API reliability - success rate below 95%",
+    "Review data consistency across endpoints",
+    "Implement comprehensive API documentation with OpenAPI/Swagger",
+    "Add API versioning strategy for future compatibility",
+    "Consider implementing API rate limiting and caching"
+  ]
+}

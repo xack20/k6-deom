@@ -1,0 +1,331 @@
+# K6 Demo Project - Combined .gitignore
+# Covers both NestJS Backend and K6 Testing
+
+# ==========================================
+# Node.js & NPM
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ==========================================
+# NestJS Backend Specific
+# ==========================================
+# Compiled output
+backend/dist/
+backend/build/
+backend/.next/
+
+# TypeScript cache
+backend/*.tsbuildinfo
+backend/.tscache/
+
+# NestJS logs
+backend/logs/
+backend/*.log
+
+# Coverage directory used by tools like istanbul
+backend/coverage/
+backend/.nyc_output/
+
+# Environment variables
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+
+# Database
+backend/*.db
+backend/*.sqlite
+backend/database.sqlite3
+
+# Upload directories
+backend/uploads/
+backend/public/uploads/
+
+# ==========================================
+# K6 Testing Specific
+# ==========================================
+# K6 result outputs (now organized in reports/)
+k6-tests/*.json
+k6-tests/*.html
+k6-tests/*.xml
+k6-tests/*.csv
+
+# K6 temporary files
+k6-tests/tmp/
+k6-tests/temp/
+k6-tests/.k6/
+
+# Test data files (large datasets)
+k6-tests/data/large-dataset-*.json
+k6-tests/data/generated-*.csv
+k6-tests/data/bulk-*.txt
+
+# K6 Screenshots and videos (if using browser tests)
+k6-tests/screenshots/
+k6-tests/videos/
+k6-tests/traces/
+
+# K6 performance monitoring outputs
+k6-tests/metrics/
+k6-tests/prometheus/
+k6-tests/grafana/
+
+# ==========================================
+# IDE & Editor Files
+# ==========================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==========================================
+# Operating System Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# Security & Certificates
+# ==========================================
+# SSL certificates
+*.pem
+*.key
+*.cert
+*.csr
+*.crt
+*.p12
+*.pfx
+
+# JWT secrets
+jwt-secret.txt
+auth-keys/
+
+# API keys and secrets
+.secrets/
+api-keys.json
+config/secrets.json
+
+# ==========================================
+# Logs & Monitoring
+# ==========================================
+# Application logs
+*.log
+logs/
+log/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# nyc test coverage
+.nyc_output/
+
+# ==========================================
+# Cache & Temporary Files
+# ==========================================
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Build artifacts
+build/
+dist/
+out/
+
+# ==========================================
+# Docker
+# ==========================================
+# Docker files (if not using for deployment)
+# Dockerfile
+# docker-compose.yml
+# .dockerignore
+
+# Docker volumes and data
+docker-data/
+postgres-data/
+redis-data/
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+# Test results
+test-results/
+test-output/
+junit.xml
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# ==========================================
+# Documentation & Reports
+# ==========================================
+# Generated documentation
+docs/generated/
+api-docs/
+
+# Report archives (keep current in reports/)
+k6-tests/reports/archived/*.json
+k6-tests/reports/old-*/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# ==========================================
+# Dependency Management
+# ==========================================
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# ==========================================
+# Miscellaneous
+# ==========================================
+# Runtime configuration
+.env.*.local
+.env.production
+
+# Editor directories and files
+.vscode/
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# MacOS Finder
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# ==========================================
+# Project Specific Exclusions
+# ==========================================
+# Large test datasets
+k6-tests/data/datasets/large/
+k6-tests/data/performance-data/
+
+# Personal configurations
+config/personal/
+.personal-config.json
+
+# Experimental features
+experimental/
+playground/
+
+# Archive directories
+archive/
+old-versions/
+
+# ==========================================
+# Keep These Files (Force Include)
+# ==========================================
+# Important: Use ! to force include these files even if they match patterns above
+!k6-tests/reports/README.md
+!k6-tests/config/environment.example.js
+!backend/config/database.example.js
+!README.md
+!LICENSE
+!.gitkeep
+
+# Keep example and template files
+!*.example.*
+!*.template.*
+!*-example.*

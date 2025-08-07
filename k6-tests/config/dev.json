@@ -1,0 +1,15 @@
+{
+  "options": {
+    "stages": [
+      { "duration": "30s", "target": 10 }
+    ],
+    "thresholds": {
+      "http_req_duration": ["p(95)<2000"],
+      "http_req_failed": ["rate<0.1"]
+    }
+  },
+  "env": {
+    "BASE_URL": "http://localhost:3000",
+    "ENV": "dev"
+  }
+}
