@@ -11,10 +11,10 @@ import { WebSocketModule } from './websocket/websocket.module';
 
 @Module({
   imports: [
-    // Optimized rate limiting for high performance
+    // Ultra-high performance rate limiting for K6 testing
     ThrottlerModule.forRoot({
       ttl: 60000, // 1 minute
-      limit: 1000, // Increased to 1000 requests per minute for K6 testing
+      limit: 10000, // 10,000 req/min per IP (very high for K6)
     }),
     AuthModule,
     UsersModule,
