@@ -41,6 +41,12 @@ k6-demo/
 │   ├── config/             # Environment-specific Configurations
 │   ├── utils/              # Utility Functions & Helpers
 │   └── reports/            # Test Results & Analysis
+├── docs/                   # Complete Project Documentation
+│   ├── BACKEND_OPTIMIZATION_SUMMARY.md
+│   ├── GIT_CONFIGURATION.md
+│   ├── K6_CAPABILITIES_DEMO.md
+│   ├── PROJECT_STATUS.md
+│   └── README.md           # Documentation Navigation
 └── README.md               # Complete Documentation
 ```
 
@@ -407,7 +413,17 @@ BASE_URL=http://localhost:3001 k6 run tests/load/basic-load-test.js
 - [Performance Testing Best Practices](https://k6.io/docs/test-types/)
 - [NestJS Documentation](https://nestjs.com/)
 
-## 📄 License
+## � Project Documentation
+
+For detailed project documentation, see the [`docs/`](./docs/) folder:
+
+- [Backend Optimization Summary](./docs/BACKEND_OPTIMIZATION_SUMMARY.md) - Performance improvements and benchmarks
+- [Git Configuration Guide](./docs/GIT_CONFIGURATION.md) - Repository setup and best practices
+- [K6 Capabilities Demo](./docs/K6_CAPABILITIES_DEMO.md) - Complete testing features overview
+- [Project Status](./docs/PROJECT_STATUS.md) - Current development status
+- [Documentation Index](./docs/README.md) - Complete documentation navigation
+
+## �📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
